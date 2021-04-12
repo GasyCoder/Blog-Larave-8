@@ -1,7 +1,6 @@
 ## Laravel 8.0 blog
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 </p>
 
 In this tutorial, we are going to walk-through creating a simple blog in Laravel and Livewire. It will be pretty simple and can be used as a starting point for building your blog with these awesome frameworks.
@@ -16,7 +15,6 @@ Let's move on to creating our posts table migration.
 We can create our posts table migration with the following command:<br>
 <code>php artisan make:migration create_posts_table</code>
 If we open up that file, we can add the following schema data to our migration:<br>
-<code>
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -55,5 +53,4 @@ class CreatePostsTable extends Migration
         Schema::dropIfExists('posts');
     }
 }
-</code>
 
